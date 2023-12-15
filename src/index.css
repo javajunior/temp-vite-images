@@ -312,7 +312,7 @@ Toggle Container
   padding: 1rem 0;
   margin: 0 auto;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .dark-toggle {
@@ -324,18 +324,22 @@ Toggle Container
   place-items: center;
   cursor: pointer;
 }
+
 .toggle-icon {
   font-size: 1.5rem;
   color: var(--textColor);
 }
+
 /* 
 ========
 Search Form
 ========
 */
+
 .title {
   color: var(--primary-500);
 }
+
 .search-form {
   width: var(--view-width);
   max-width: var(--fixed-width);
@@ -350,16 +354,15 @@ Search Form
   transition: var(--darkModeTransition);
   color: var(--textColor);
   border-radius: 0;
-
-  /* border-right: none; */
 }
 
 .search-form .btn {
   border-radius: 0;
 }
+
 .search-form .btn:hover {
   background: var(--primary-300);
-  color: var(--black);
+  color: black;
 }
 
 /* 
@@ -370,7 +373,7 @@ Gallery
 
 .image-container {
   width: var(--view-width);
-  max-width: var(--max-width);
+  max-width: var(--fixed-width);
   margin: 3rem auto;
   display: grid;
   gap: 2rem;
@@ -385,6 +388,7 @@ Gallery
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (min-width: 992px) {
   .image-container {
     grid-template-columns: 1fr 1fr 1fr;
